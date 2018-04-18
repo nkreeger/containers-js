@@ -32,4 +32,10 @@ describe('unique queue', () => {
     }
     expect(queue.values()).toEqual([0, 2, 1]);
   });
+  it('should report contains key', () => {
+    const queue = new UniqueQueue<number>();
+    queue.push(1);
+    expect(queue.has(1)).toBe(true);
+    expect(queue.has(2)).toBe(false);
+  });
 });

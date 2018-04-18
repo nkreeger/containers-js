@@ -1,4 +1,5 @@
 
+// tslint:disable-next-line:no-any
 export class UniqueQueue<Value extends any> {
   private size: number;
   private keys: Set<Value>;
@@ -23,5 +24,9 @@ export class UniqueQueue<Value extends any> {
 
   values(): Value[] {
     return this.items;
+  }
+
+  has(value: Value): boolean {
+    return this.keys.has(value);
   }
 }
