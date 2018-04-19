@@ -1,12 +1,17 @@
 {
   "name": "containers.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "author": {
     "name": "Nick Kreeger"
   },
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nkreeger/containers-js"
+  },
+  "description": "Various data structures for JavaScript - implemented in TypeScript.",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
     "clang-format": "^1.2.3",
