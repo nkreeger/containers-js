@@ -1,5 +1,4 @@
-import {UniqueQueue} from '.';
-import {SortedArray} from './sorted-array';
+import {SortedArray, UniqueQueue} from '.';
 
 describe('UniqueQueue', () => {
   it('returns FIFO', () => {
