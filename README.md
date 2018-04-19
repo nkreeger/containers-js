@@ -1,4 +1,4 @@
-# containers-js
+# containers.js
 Various data structures for JavaScript - implemented in TypeScript.
 
 ## Implemented containers:
