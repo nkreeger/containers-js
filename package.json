@@ -11,6 +11,13 @@
     "url": "https://github.com/nkreeger/containers-js"
   },
   "description": "Various data structures for JavaScript - implemented in TypeScript.",
+  "keywords": [
+    "containers",
+    "sorted array",
+    "queue",
+    "unique queue",
+    "data-structures"
+  ],
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jasmine": "^2.8.6",
