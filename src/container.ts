@@ -10,7 +10,11 @@ export interface Container<T extends any> {
   // True if value is in container.
   has(value: T): boolean;
 
+  // Returns list of values in order.
   values(): T[];
+
+  // Removes all elements.
+  clear(): void;
 
   // Length of container.
   size(): number;

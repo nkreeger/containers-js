@@ -35,6 +35,11 @@ export class UniqueQueue<T extends any> implements Container<T> {
     return this.items;
   }
 
+  clear(): void {
+    this.items = [];
+    this.keys = new Set();
+  }
+
   size(): number {
     return this.items.length;
   }

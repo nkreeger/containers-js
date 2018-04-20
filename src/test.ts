@@ -46,6 +46,18 @@ describe('UniqueQueue', () => {
     queue.insertValues(items);
     expect(queue.values()).toEqual(['test4', 'test3', 'test2', 'test']);
   });
+  it('clears', () => {
+    const queue = new UniqueQueue<number>();
+    queue.push(1);
+    queue.push(2);
+    queue.push(2);
+    queue.clear();
+    expect(queue.values()).toEqual([]);
+    expect(queue.size()).toBe(0);
+    queue.push(2);
+    queue.push(2);
+    expect(queue.values()).toEqual([2]);
+  });
 });
 
 describe('SortedArray', () => {
@@ -86,5 +98,17 @@ describe('SortedArray', () => {
     c.insertValues([100, 600, 40, 1000]);
     expect(c.values()).toEqual([1000, 600, 100, 40]);
     expect(c.size()).toBe(4);
+  });
+  it('clears', () => {
+    const c = new SortedArray<number>();
+    c.push(10);
+    c.push(4);
+    c.push(5);
+    c.clear();
+    expect(c.values()).toEqual([]);
+    expect(c.size()).toBe(0);
+    c.push(10);
+    expect(c.values()).toEqual([10]);
+    expect(c.size()).toBe(1);
   });
 });

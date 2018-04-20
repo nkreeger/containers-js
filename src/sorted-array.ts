@@ -29,6 +29,10 @@ export class SortedArray<T extends any> implements Container<T> {
     return this.items;
   }
 
+  clear(): void {
+    this.items = [];
+  }
+
   size(): number {
     return this.items.length;
   }
