@@ -1,6 +1,13 @@
 # containers.js
 Various data structures for JavaScript - implemented in TypeScript.
 
+## Installation:
+```
+$ npm install containers.js
+or
+$ yarn add containers.js
+```
+
 ## Implemented containers:
 - SortedArray<T>
   - An array that automatically sorts items pushed into the container.
